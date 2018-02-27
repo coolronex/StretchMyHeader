@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vIX-IO-IR4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stretch Header TableVC-->
+        <scene sceneID="M3f-Yn-BXH">
+            <objects>
+                <tableViewController id="vIX-IO-IR4" customClass="StretchHeaderTableVC" customModule="Stretch_My_Header" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wLV-uu-dyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="1oq-eo-JjD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-header" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-LZ-8IC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJh-lE-A5O">
+                                    <rect key="frame" x="10" y="15" width="357" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Kbh-LZ-8IC" firstAttribute="top" secondItem="1oq-eo-JjD" secondAttribute="top" id="2qv-Mc-oGC"/>
+                                <constraint firstItem="Kbh-LZ-8IC" firstAttribute="leading" secondItem="1oq-eo-JjD" secondAttribute="leading" id="B7h-NT-Qna"/>
+                                <constraint firstItem="zJh-lE-A5O" firstAttribute="leading" secondItem="1oq-eo-JjD" secondAttribute="leading" constant="10" id="EoK-TV-cgd"/>
+                                <constraint firstAttribute="trailing" secondItem="Kbh-LZ-8IC" secondAttribute="trailing" id="NUo-d1-Szo"/>
+                                <constraint firstItem="zJh-lE-A5O" firstAttribute="top" secondItem="1oq-eo-JjD" secondAttribute="top" constant="15" id="O6c-yy-mJS"/>
+                                <constraint firstAttribute="bottom" secondItem="Kbh-LZ-8IC" secondAttribute="bottom" id="Vhc-Te-hId"/>
+                                <constraint firstAttribute="trailing" secondItem="zJh-lE-A5O" secondAttribute="trailing" constant="8" id="pp5-h3-Tgc"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="77" id="MXY-Uk-bBt" customClass="NewsTableViewCell" customModule="Stretch_My_Header" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="251" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MXY-Uk-bBt" id="nHm-2e-pKk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYk-0R-BSi">
+                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate change protests, divestments meet fossil fuels realities" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-YR-zsu">
+                                            <rect key="frame" x="16" y="45" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zMt-YR-zsu" firstAttribute="top" secondItem="oYk-0R-BSi" secondAttribute="bottom" constant="13" id="0HB-aT-DEk"/>
+                                        <constraint firstAttribute="trailing" secondItem="oYk-0R-BSi" secondAttribute="trailing" constant="16" id="1c1-aU-Tbi"/>
+                                        <constraint firstItem="oYk-0R-BSi" firstAttribute="leading" secondItem="nHm-2e-pKk" secondAttribute="leading" constant="16" id="HP3-3d-afE"/>
+                                        <constraint firstItem="oYk-0R-BSi" firstAttribute="top" secondItem="nHm-2e-pKk" secondAttribute="top" constant="11" id="KEx-dU-uAK"/>
+                                        <constraint firstItem="zMt-YR-zsu" firstAttribute="leading" secondItem="nHm-2e-pKk" secondAttribute="leading" constant="16" id="Ohb-ir-Oab"/>
+                                        <constraint firstAttribute="bottom" secondItem="zMt-YR-zsu" secondAttribute="bottom" constant="10.5" id="klV-6B-yf4"/>
+                                        <constraint firstAttribute="trailing" secondItem="zMt-YR-zsu" secondAttribute="trailing" constant="16" id="o3P-HG-xe1"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="oYk-0R-BSi" id="VOf-Rs-baf"/>
+                                    <outlet property="headlineLabel" destination="zMt-YR-zsu" id="ONt-xF-RyI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vIX-IO-IR4" id="HCE-sm-2Vs"/>
+                            <outlet property="delegate" destination="vIX-IO-IR4" id="Gu0-HA-0Gh"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="dateLabel" destination="zJh-lE-A5O" id="bZ8-Lv-DU1"/>
+                        <outlet property="headerView" destination="1oq-eo-JjD" id="2zC-dr-vci"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfU-cV-A4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-header" width="621" height="412"/>
+    </resources>
+</document>
